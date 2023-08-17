@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Kalam:wght@300;400&family=Pacifico&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(47, 49, 52);
+  background: radial-gradient(
+    circle,
+    rgba(47, 49, 52, 1) 0%,
+    rgba(47, 49, 52, 0.9556197478991597) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2f3134;
+}
+.box {
+  position: relative;
+  width: 450px;
+  height: 550px;
+  border-radius: 32px;
+  padding: 18px 35px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(17, 17, 17, 0.25),
+    inset 5px 5px 10px rgba(17, 17, 17, 0.25), inset 5px 5px 20px #2f3134,
+    inset -5px -5px 15px rgba(15, 15, 15, 0.75);
+}
+h2 {
+  width: 100%;
+  font-family: "Barriecito", cursive;
+  color: #ffffff;
+  text-align: center;
+  /* font-weight: 600px; */
+  font-size: 3em;
+}
+#inputBox {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 1.15em;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    2px 2px 5px rgba(17, 17, 17, 0.25),
+    inset 5px 5px 10px rgba(17, 17, 17, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.box li {
+  position: relative;
+  display: flex;
+  width: calc(100% - 65px);
+  align-items: center;
+  background: #ffffff;
+  margin: 8px 0px;
+  padding: 13px 13px 13px 60px;
+  min-height: 45px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    2px 2px 5px rgba(17, 17, 17, 0.25),
+    inset 5px 5px 10px rgba(17, 17, 17, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.box li::before {
+  content: "";
+  left: 8px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: rgb(47, 49, 52);
+  border-radius: 50%;
+}
+.box li i {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: khaki;
+  right: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.box li i::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  transform: rotate(45deg);
+}
+.box li i::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  transform: rotate(-45deg);
+}
+.box li.done {
+  background: #d0acac;
+}
+.box li.done::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  width: 12px;
+  height: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(318deg);
+}
+#list {
+  position: relative;
+  margin-top: 20px;
+  height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(103, 102, 102, 0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(246, 239, 239, 0.5); 
+}
