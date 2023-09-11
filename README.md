@@ -1,2 +1,2 @@
 # To-Do-List
-i made this by using HTML , CSS, JavaScript 
+i made this by using HTML , CSS, JavaScript. 
